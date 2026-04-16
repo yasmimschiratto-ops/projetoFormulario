@@ -47,3 +47,19 @@ textarea {
     position: relative;
     top: -46px;
 }
+
+.form-header {
+    border-bottom: 1px solid rgb(136, 158, 180);
+    height: 45px;
+}
+
+.form-header p{
+    color: rgb(243, 158, 148);
+    border-bottom: 2px solid rgb(129, 124, 158);
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    height: 45px;
+    list-style: 45px;
+}
