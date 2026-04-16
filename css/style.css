@@ -20,8 +20,30 @@ input{
     border-bottom: 1px solid rgb(109, 19, 37);
     padding: 10px 0;
 }
+
+input[type="text"], input[type="numeber"], input[type="date"], input[type="file"], textarea {
+   width: 400px;
+}
+
+textarea {
+    padding: 10px 5px;
+}
+
 .cabecalho {
     height: 160px;
     padding: 20px;
     background-color: blueviolet;
+}
+
+.cabecalho h3 {
+    color: rgb(192, 192, 248);
+    margin-top: 0;
+}
+
+.form-container {
+    background-color: rgb(194, 243, 216);
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    top: -46px;
 }
