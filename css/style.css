@@ -54,7 +54,7 @@ textarea {
 }
 
 .form-header p{
-    color: rgb(243, 158, 148);
+    color:rgb(243, 158, 148);
     border-bottom: 2px solid rgb(129, 124, 158);
     width: 100%;
     text-align: center;
@@ -86,4 +86,9 @@ textarea {
 
 .block {
     display: block;
+}
+
+.caixaOpcional {
+    display: inline-block;
+    margin: 0 30px o 30px;
 }
