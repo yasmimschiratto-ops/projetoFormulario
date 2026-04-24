@@ -22,7 +22,7 @@ function salvarCarro(event) {
 carros.push(carro);
 localStorage.setItem("carros", JSON.stringify(carros));
 
-adcionarNatela(carro);
+adicionarNatela(carro);
 
 document.querySelector("form").reset();
 }
