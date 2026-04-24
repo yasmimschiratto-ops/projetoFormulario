@@ -32,7 +32,7 @@ textarea {
 .cabecalho {
     height: 160px;
     padding: 20px;
-    background-color: rgb(241, 179, 253);
+    background-color: rgb(164, 149, 230);
 }
 
 .cabecalho h3 {
@@ -113,6 +113,7 @@ textarea {
 hr {
     margin: 20px;
     height: 3px;
-    background: linear-gradient(to right, trasparent,#a5a3f7, trasparent);
+    background: linear-gradient(to right, trasparent,#7e7bfa, trasparent);
+    margin: 20px 0;
     border: none;
 }
