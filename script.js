@@ -26,3 +26,43 @@ adicionarNatela(carro);
 
 document.querySelector("form").reset();
 }
+
+function adicionarNatela(carro) {
+    let lista = document.getElementById('listaCarros');
+    let card = document.createElement('div');
+    card.classList.add('card');
+
+    card.innerHTML = `
+    <img src = "https://picsum.photos/250/150?random = ${math.random()}">
+    <h3>${carro.titulo}<h3>
+    <p><strong>Preço:</strong> R$ ${carro.preco}</p>
+    <p><strong>Mrca:</strong> R$ ${carro.marca}</p> 
+    <p><strong>Modelo:</strong> R$ ${carro.modelo}</p>
+    <p><strong>Câmbio:</strong> R$ ${carro.cambio}</p>
+
+<button onclick = "excluirCarro(${carro.id}">Excluir</button>
+`
+
+lista.appendChild(card);
+
+}
+
+window.onload = function () {
+  let carros = JSON.parse(localStorage.getItem('carros')) || [];
+
+    carros.forEach(carro => {
+        adicionarNaTela(carro);
+    });
+}
+
+function excluirCarro(id) {
+    let carros = JSON.parse(localStorage.getItem('carros')) || [];
+
+    carros = carros.filter(carro => Number(carro.id) !== Number(id));
+
+    localStorage.setItem('carros', JSON.stringify(carros));
+
+    document.getElementById('listaCarros').innerHTML = "";
+
+    carros.forEach(carro => adicionarNaTela(carro));
+}
